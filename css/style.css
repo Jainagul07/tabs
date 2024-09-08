@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgba(216, 112, 147, 0.784);
+}
+.hero {
+  margin-top: 60px;
+}
+.hero-img input {
+  display: none;
+}
+.hero-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-tabs label {
+  font-size: 40px;
+  background: #fff;
+  padding: 10px 35px;
+  border-radius: 10px;
+}
+.hero-input {
+  display: none;
+}
+.hero-img img {
+  width: 250px;
+}
+.hero-img {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  /* border-radius: 20px; */
+  margin-top: 60px;
+  /* width: 100%; */
+  /* height: 400px; */
+  /* background: #0000008e; */
+}
+#cofee:checked ~ .hero-img3,
+#cofee:checked ~ .hero-img4,
+#cofee:checked ~ .hero-img5 {
+  opacity: 0.4;
+  transition: 0.8s;
+  transform: translateY(100px);
+}
+#breakfast:checked ~ .hero-img2,
+#breakfast:checked ~ .hero-img4,
+#breakfast:checked ~ .hero-img5 {
+  opacity: 0.4;
+  transition: 0.8s;
+  transform: translateY(100px);
+}
+#drink:checked ~ .hero-img2,
+#drink:checked ~ .hero-img3,
+#drink:checked ~ .hero-img5 {
+  opacity: 0.4;
+  transition: 0.8s;
+  transform: translateY(100px);
+}
+#cake:checked ~ .hero-img2,
+#cake:checked ~ .hero-img3,
+#cake:checked ~ .hero-img4 {
+  opacity: 0.4;
+  transition: 0.8s;
+  transform: translateY(100px);
+}
